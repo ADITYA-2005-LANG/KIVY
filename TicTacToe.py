@@ -14,7 +14,6 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window
 from time import sleep
 class tictactoe(Widget):
-  bg_color=ObjectProperty([1,1,1,1])
   turn="X"
   arr=[[],[],[]]
   def clear(self, inst):

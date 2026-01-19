@@ -15,16 +15,25 @@
   FloatLayout:
     Label:
       text:"X: 0"
-      font_size:100
+      font_size:root.size/9
       pos:root.center_x/4,root.height-200
     Label:
       text:"O: 0"
-      font_size:100
+      font_size:root.size/9
       pos:3*root.center_x/2,root.height-200
     Button:
       text:"RESET"
-      font_size:100
+      font_size:root.size/9
       size_hint:None,None
       size:300,150
       pos:root.center_x-150,70
       on_release:root.clear(self)
+    Button:
+      text:"RESTART"
+      font_size:root.size/9
+      size_hint:None,None
+      size:-300,150
+      pos:root.center_x-150,70
+      on_release:root.clear(self)
+
+
